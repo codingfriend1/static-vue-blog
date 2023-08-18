@@ -26,7 +26,7 @@ Welcome to the Static Vue Blog template! Harness the power of Vue 3, Vite, and o
 
 ## Contributing
 
-Contributions are always welcome! Please review the Contributing guidelines.
+Contributions are always welcome!
 
 ## Disclaimer
 
