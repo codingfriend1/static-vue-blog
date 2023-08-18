@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,700;1,8..60,300;1,8..60,400;1,8..60,700&display=swap');
+
+* {
+  word-wrap: break-word;
+}
+
+html {
+  // font-size: 11pt;
+  font-size: calc( 11pt + (16 - 11) * (100vw - 400px) / 400 );
+}
+
+@media screen and (min-width: 801px){
+  html { font-size: 16pt }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 11pt;
+  }
+}
+
+/**
+ * Font Family
+ */
+
+body {
+  font-family: 'Source Serif 4', 'Georgia', serif;
+}
+
+main > header h1,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+main > header, 
+nav a,
+.article-teaser time,
+.article-teaser span,
+figcaption p, 
+address,
+input, 
+input[type="submit"],
+.read-more-button,
+button {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/**
+ * Line height
+ */
+
+body,
+main > header h1,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  line-height: 1.35em;
+}
+
+main p,
+main ol,
+main ul {
+  line-height: 1.8rem;
+}
+
+#site-banner figcaption p {
+  list-style: 1.4rem;
+}
+
+blockquote p {
+  line-height: inherit;
+}
+
+/**
+ * Margins and Text Spacing
+ */
+
+main {
+  p, ol, ul, li {
+    margin-top: 0.7rem;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6,
+  blockquote {
+    margin-top: 1.5rem;
+  }
+
+  li {
+    margin-bottom: 0.7rem;
+  }
+
+  blockquote {
+    margin-bottom: 1.5rem;
+    margin-left: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  ol,
+  ul {
+    margin-left: 2rem;
+  }
+
+  li {
+    margin-bottom: 0.7rem;
+  }
+}
+
+/**
+ * Font Size
+ */
+
+main > header h1,
+h1, .h1 {
+  font-size: 1.818rem; // Equivalent to 20pt within the context of the parent
+}
+
+h2, .h2 {
+  font-size: 1.545rem;
+}
+
+#site-title,
+#site-title a {
+  font-size: 1rem;
+}
+
+h3, .h3,
+h4, .h4 {
+  font-size: 1.272rem;
+}
+
+h5, .h5 {
+  font-size: 1.09rem;
+}
+
+input[type="submit"],
+button,
+.read-more-button {
+  font-size: 0.75rem;
+}
+
+#site-banner figcaption p {
+  font-size: 0.85rem;
+}
+
+#home-page #teasers .article-teaser {
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  time,
+  span {
+    font-size: 0.7rem;
+  }
+
+  section {
+    font-size: 0.9em;
+  }
+}
+
+/**
+ * Font Weight, Letter Spacing, Transform and Decoration
+ */
+
+body {
+  font-weight: 400; // Regular weight
+}
+
+main > header h1,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+table th {
+  font-weight: bold;
+}
+
+input[type="submit"],
+button,
+.read-more-button {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#site-title,
+#site-title a {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 700;
+}
+
+#home-page #teasers .article-teaser {
+  time,
+  span {
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 801px) {
+
+  #site-banner {
+
+    #site-title,
+    #site-title a {
+      letter-spacing: 2px;
+    }
+
+    figcaption p {
+      line-height: 1.45rem;
+    }
+  }
+}
+
+@media (max-width: 401px) {
+
+  // html {
+  //   font-size: 11pt;
+  // }
+
+  main article {
+    p,
+    blockquote {
+      text-align: justify;
+    }
+
+    p,
+    ol,
+    ul {
+      margin-top: 0.6rem;
+      line-height: 1.7rem;
+    }
+
+    blockquote {
+      margin-top: 1.2rem;
+      margin-bottom: 1.2rem;
+      margin-left: 1.2rem;
+      line-height: 1.5rem;
+    }
+  }
+}

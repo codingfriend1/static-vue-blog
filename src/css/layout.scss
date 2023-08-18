@@ -1,0 +1,225 @@
+main {
+  max-width: 75ch;
+  margin: 0 auto;
+  padding: 1rem 1rem 0;
+}
+
+main#home-page {
+  max-width: 100%;
+}
+
+#site-banner {
+  background-image: url("%VITE_BANNER_URL%");
+  background-repeat: no-repeat;
+  background-size: cover; // Cover ensures the image fills the entire container
+  background-position: center center;
+  position: relative;
+  padding-top: 56.25%; // 16:9 Aspect Ratio
+
+  figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 485px;
+    max-width: 85%;
+    transform: translate(-50%, -50%);
+    padding: 1em 1em 1.2em;
+    border-radius: 3px;
+    text-align: center;
+
+    #site-title {
+      margin-top: 0;
+      margin-bottom: 0.2em;
+    }
+
+    img {
+      max-width: 60px;
+    }
+  }
+}
+
+nav {
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 12px;
+  }
+
+  ul {
+    list-style: none;
+    display: flex; // Use inline-flex to keep the list centered
+    justify-content: center; // Center the items horizontally
+  }
+}
+
+#site-footer {
+  padding: 10px;
+  display: flex; // Use Flexbox for horizontal layout
+  justify-content: center; // Space the items evenly
+  flex-wrap: wrap; // Allow wrapping on smaller screens
+
+  a {
+    margin: 0 10px; // Add some horizontal margin between links
+  }
+}
+
+// Optional: Adjust the layout for smaller screens
+@media (max-width: 768px) {
+  #site-footer {
+    flex-direction: column; // Stack the items vertically
+    text-align: center; // Center the text
+  }
+}
+
+#home-page {
+  padding: 10px 10px 10px;
+
+  /**
+   * index.md html
+   */
+  & > section {
+    text-align: center;
+  }
+
+  #teasers {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .article-teaser {
+      flex: 1 1 350px;
+      padding: 20px 20px 30px;
+
+      a {
+        text-decoration: none;
+      }
+
+      section {
+        margin-top: 0.2em;
+        font-size: .9em;
+      }
+
+      .read-more-button {
+        padding: 0.3rem 0.7rem;
+        margin-top: 0.5rem;
+        border-radius: 3px;
+        display: inline-block;
+        cursor: pointer;
+        transition: color 0.3s, border-color 0.3s;
+      }
+    }
+  }
+}
+
+main > header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.75em;
+
+  address {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+  }
+
+  time {
+    font-size: 0.87rem;
+    margin-top: 0.25em;
+  }
+
+  #post-avatar {
+    line-height: 0px;
+
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+  }
+}
+
+#comments {
+  .h4 {
+    margin-bottom: 1.3rem;
+  }
+}
+
+
+@media (max-width: 801px) {
+
+  #home-page {
+    h1 {
+      font-size: 1.1rem;
+    }
+
+    #teasers {
+      .article-teaser {
+        padding: 5px 5px 10px;
+
+        h3 {
+          font-size: 1rem;
+          text-align: left;
+          line-height: 1.5;
+        }
+
+        p {
+            text-align: justify;
+          }
+      }
+    }
+  }
+}
+
+main footer form#mc-embedded-subscribe-form {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+}
+
+// Limit the height on screens wider than 1024px
+@media (min-width: 800px) {
+  #site-banner {
+    height: 430px; // Or whatever maximum height you prefer
+    padding-top: 0; // Reset the padding-top
+  }
+}
+
+@media (max-width: 801px) {
+
+  #site-banner {
+    #site-title,
+    #site-title a {
+      font-size: 1.1em;
+    }
+
+    figcaption {
+
+      padding: 1em;
+
+      p {
+        font-size: 0.9em;
+      }
+
+      img {
+        max-width: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 501px) {
+
+  #site-banner {
+    figcaption {
+      padding: 0.8em;
+    }
+  }
+}
+

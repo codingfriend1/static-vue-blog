@@ -1,0 +1,71 @@
+/**
+* Colors
+*/
+
+body,
+#site-footer,
+#site-footer a,
+ {
+  color: #444;
+}
+
+figcaption,
+button,
+input[type="submit"],
+#site-title,
+#site-title a,
+.read-more-button,
+nav a
+{
+  color: #fff;
+}
+
+.article-teaser section,
+main header time,
+main header span {
+  color: #666;
+}
+
+#site-banner figcaption p {
+  color: #a5a5a5;
+}
+
+/**
+ * Borders
+ */
+
+nav {
+
+  a {
+    border-bottom: 2px solid transparent; /* Transparent border in normal state */
+  }
+
+  .router-link-active {
+    border-bottom: 2px solid #fff !important;
+  }
+}
+
+main footer form#mc-embedded-subscribe-form {
+  border-top: 1px solid #1d1d1d;
+}
+
+/**
+ * Background and Other Colors
+ */
+
+a {
+  text-decoration-color: #A0C2E8;
+}
+
+
+#site-banner,
+#site-banner figcaption {
+  background-color: #1d1d1d;
+}
+
+nav,
+.read-more-button,
+button,
+input[type="submit"]  {
+ background-color: #346488;
+}

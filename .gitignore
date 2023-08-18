@@ -1,0 +1,20 @@
+# Logs
+logs
+*.log
+
+unoptimized-images/*
+
+# exception to the rule
+!unoptimized-images/.gitkeep 
+
+# Runtime data
+pids
+*.pid
+*.seed
+.DS_Store
+public/.DS_Store
+markdown/.DS_Store
+markdown/articles/.DS_Store
+
+dist
+node_modules

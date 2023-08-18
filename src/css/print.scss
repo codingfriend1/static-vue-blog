@@ -1,0 +1,80 @@
+@media print {
+
+  // 1.61803398875 Golden Ratio
+
+  main,
+  #site-footer {
+    padding-left: 1in;
+    padding-right: 1in;
+  }
+
+  main article,
+  #site-footer {
+    text-align: justify;
+  }
+
+  main > header h1,
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    break-after: avoid; // Avoid breaking after headings
+    page-break-after: avoid; // For older browsers
+    margin-top: 1.272rem;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  main {
+
+    ol,
+    ul {
+      margin-left: 0.35in;
+    }
+
+    blockquote {
+      margin-left: 0.25in;
+    }
+
+    article {
+      p,
+      ol,
+      ul,
+      blockquote,
+      li {
+        margin-top: 0.636rem;
+      }
+
+      p,
+      ol,
+      ul,
+      blockquote {
+        margin-bottom: 0;
+      }
+
+      li {
+        margin-bottom: 0.636rem;
+      }
+
+      p,
+      ol,
+      ul {
+        line-height: 1.7rem;
+      }
+    }
+  }
+
+  // Hide all direct children of main except header and article
+  .videoWrapper,
+  body > div > *:not(main):not(#site-footer),
+  main > *:not(header):not(article) {
+    display: none;
+  }
+
+  #site-footer,
+  #site-footer a {
+    flex-direction: row;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
